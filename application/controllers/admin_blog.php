@@ -6,7 +6,7 @@ class Admin_blog extends CI_Controller {
 		parent::__construct();
 
 		if($this->m_control->user_lvl < 3){
-			redirect(base_url() . "admin/control");
+			redirect(base_url() . "admin/control/?backto=" . uri_string());
 		}
 
 		$this->pagination_url = base_url()."admin/blog/";

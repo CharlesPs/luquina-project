@@ -19,7 +19,9 @@ control.ajax_submit = function(e){
 		type : 'post',
 		success : function(ret){
 			if(ret == "1"){
-				$(location).attr("href", "admin");
+
+				var backto = $("#login-form").attr("data-backto") || "admin/";
+				$(location).attr("href", backto);
 			}
 		}
 	});

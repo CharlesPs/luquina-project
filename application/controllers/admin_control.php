@@ -24,6 +24,8 @@ class Admin_control extends CI_Controller {
 
 		$output = $this->set_output();
 
+		$output["backto"] = $this->input->get("backto");
+
 		$output["body_class"] = "control";
 
 		$output["web_content"] = $this->load->view("admin/v_control", $output, true);

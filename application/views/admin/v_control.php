@@ -1,7 +1,7 @@
     <div class="container content-control">
 
       <h2 class="form-signin-heading">Inicie Sesión</h2>
-      <form id="login-form" role="form">
+      <form id="login-form" role="form" data-backto="<?php echo ($backto) ? $backto : ""; ?>">
         <div class="form-group">
           <label for="exampleInputEmail1">Usuario</label>
           <input type="text" class="form-control" id="admin-mail" placeholder="Ingresa usuario">
